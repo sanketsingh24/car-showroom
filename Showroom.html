@@ -326,6 +326,16 @@ function loadAudi(){
 function loadLamborghini(){
     Scene.objects = [];
     Scene.addObject(Floor);
+    
+    updateLightPropertyforAudi(1, 's', 0.8);
+    updateLightPropertyforAudi(2, 's', 0.8);
+    updateLightPropertyforAudi(3, 's', 0.8);
+    updateLightPropertyforAudi(4, 's', 0.8);
+    updateLightPropertyforAudi(1, 'd', 0.4);
+    updateLightPropertyforAudi(2, 'd', 0.4);
+    updateLightPropertyforAudi(3, 'd', 0.4);
+    updateLightPropertyforAudi(4, 'd', 0.4);
+    
     Scene.loadObject('models/cars/bmw/part5.json','world');
     for(var i = 1; i <= 67; i+=1){
         Scene.loadObject('models/cars/lamborghini/part'+i+'.json');
